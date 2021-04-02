@@ -1,13 +1,19 @@
 [[source]]
-name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-
-[dev-packages]
+name = "pypi"
 
 [packages]
 django = "*"
+codecov = "*"
+coverage = "*"
 python-decouple = "*"
+gunicorn = "*"
+
+[dev-packages]
+flake8 = "*"
+django-test = "*"
+pytest = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"

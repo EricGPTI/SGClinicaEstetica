@@ -1,0 +1,37 @@
+body {
+    font: 20px Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-image: url("../img/black4.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 1600px;    
+}
+
+.quem-somos {
+    background-color: #631D76;
+}
+
+.margin {
+    margin: 10 10 10 10px;
+    padding: 10px;
+}
+
+.parceiros {
+    background-color: #f61067;
+}
+
+.services, .servicos {
+    background-color: #2e86ab;
+    margin-bottom: 0;
+}
+
+.Title {
+    font-weight: bold;
+}
+
+.bg-footer {
+    background-color: black;
+    font-weight: bold;
+}
