@@ -6,7 +6,7 @@ body {
     background-image: url("../img/black4.jpg");
     background-repeat: no-repeat;
     background-color: black;
-    background-size: 1600px;    
+    background-size: 1600px;
 }
 
 .quem-somos {
@@ -18,8 +18,9 @@ body {
     padding: 10px;
 }
 
-.parceiros {
-    background-color: #f61067;
+.parceiros .parceiros_img {
+    width: 100px;
+    height: 100px;
 }
 
 .services, .servicos {
@@ -27,11 +28,38 @@ body {
     margin-bottom: 0;
 }
 
-.Title {
-    font-weight: bold;
+.parceiros {
+    background-color: #f61067;
 }
 
 .bg-footer {
     background-color: black;
     font-weight: bold;
+    font-size: 12px;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;
+}
+
+.carrosel-fotos{
+    margin: 5px, 20px;
+}
+
+.estetica{
+    background-color: #343a40;
+    font-color: white;
+}
+
+.Title {
+    font-weight: bold;
+    font-color: white;
+    margin-top: 5px;
+}
+
+.subtitulo {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
 }
