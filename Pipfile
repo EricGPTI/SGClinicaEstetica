@@ -4,16 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-codecov = "*"
-coverage = "*"
-python-decouple = "*"
+django = "==3.2.9"
 gunicorn = "*"
-django = "*"
+python-decouple = "*"
+pillow = "*"
+django-summernote = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
-flake8 = "*"
+codecov = "*"
+coverage = "*"
 pytest = "*"
 pytest-django = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
