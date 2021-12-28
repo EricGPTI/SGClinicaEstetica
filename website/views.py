@@ -1,9 +1,18 @@
 from django.shortcuts import render
+from django.views import View
 
 
-def home(requests):
-    return render(requests, 'index.html')
+class Home(View):
+    def get(self, request):
+        return render(request, 'website/index.html')
 
 
-def gallery(requests):
-    return render(requests, 'galeria.html')
+class Gallery(View):
+    def get(self, request):
+        return render(request, 'website/galery.html')
+
+class Register(View):
+    def get(self, request):
+        return render(request, 'website/landpage.html')
+
+
