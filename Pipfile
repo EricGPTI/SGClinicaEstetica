@@ -10,6 +10,9 @@ python-decouple = "*"
 pillow = "*"
 django-summernote = "*"
 psycopg2-binary = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
 
 [dev-packages]
 codecov = "*"

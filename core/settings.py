@@ -33,9 +33,7 @@ INSTALLED_APPS = [
 
     # Minhas apps
     'core',
-    'posts',
-    'categorias',
-    'comentarios',
+    'api',
     'website'
 ]
 
