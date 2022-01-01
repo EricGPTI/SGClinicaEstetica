@@ -15,7 +15,7 @@ body {
 }
 
 .margin {
-    margin: 10 10 10 10px;
+    /* margin: 10px 10px 10px 10px;*/
     padding: 10px;
 }
 
@@ -24,9 +24,9 @@ body {
     height: 100px;
 }
 
-.services, .servicos {
+.services {
     background-color: #2e86ab;
-    margin-bottom: 0;
+    
 }
 
 .parceiros {
