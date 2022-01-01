@@ -1,12 +1,13 @@
 body {
     font: 20px Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 .navbar {
     background-image: url("../img/black4.jpg");
     background-repeat: no-repeat;
     background-color: black;
-    background-size: 1600px;
+    background-size: auto;
 }
 
 .quem-somos {
@@ -92,13 +93,3 @@ body {
     text-align: justify;
     align-content: flex-start;
 }
-
-/* Images */
-.img-right {
-    margin-right: 1px;
-    width: 100%;
-    height: auto;
-    opacity: 0.9;
-    float: right;
-}
-
