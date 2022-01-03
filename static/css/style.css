@@ -4,10 +4,13 @@ body {
 }
 
 .navbar {
-    background-image: url("../img/black4.jpg");
     background-repeat: no-repeat;
     background-color: black;
     background-size: auto;
+}
+
+.navbar-bg {
+    background-image: url("../img/black1.jpg");
 }
 
 .quem-somos {
@@ -15,7 +18,6 @@ body {
 }
 
 .margin {
-    /* margin: 10px 10px 10px 10px;*/
     padding: 10px;
 }
 
