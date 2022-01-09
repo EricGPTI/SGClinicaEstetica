@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <nav>
+        <section id="quemsomos">
+            <div class="container-fluid quem-somos text-center margin text-white">
+                <h3 class="Title">Nossa Jornada</h3>
+                <img src="{% static 'img/index/dany.jpg' %}" class="rounded-circle margin img-fluid" alt="Equipe" width="400" height="400">
+                <div class="row align-items-start">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="margin text-white">
+                            <h6><p class="paragraph">
+                                Nossa história começa no ano de 2012, muito parecida com a maioria das histórias, 
+                                onde a insatisfação com o trabalho e a falta de reconhecimento dos profissionais foi o 
+                                maior motivador.<br />
+                                Tudo começou com uma esmalteria, o objetivo era prestar serviços de esmalteria mas também
+                                serviços de beleza, nascia então a esmalteria <strong>Estuddio Requinte</strong>, localizada em São Mateus,
+                                zona leste de São Paulo.
+                                Concretizava-se um sonho com um propósito, levar às pessoas mais que um tratamento de beleza,
+                                nosso propósito é fazer com que as pessoas se sintam bem com elas mesmas, que aumentem suas autoestima,
+                                que ganhem mais confiança, pois uma boa aparência abre portas, faz você ser notado e faz sim diferença
+                                na vida pessoal e profissional!
+                            </p></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="paragraph">
+                            <img src="{% static 'img/index/studdiorequinte.jpg' %}" class="img-fluid" alt="studdiorequinte" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="paragraph">
+                            <img src="{% static 'img/index/meuimperio.jpg' %}" class="img-fluid" alt="meuimperio" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="margin text-white">
+                            <h6>
+                                <p class="paragraph">Depois de alguns altos e baixos, em 2018 mudamos. Mudamos em diversos aspectos, não apenas o nome.
+                                Deixamos de ser apenas uma esmalteria e nos tornamos uma Clínica de Estética, Saúde e Bem-Estar!<br />
+                                Uma nova marca surge, agora, a antiga esmalteria chamada <strong>Estuddio Requinte</strong> torna-se 
+                                a <strong>Clínica de Estética, Saúde, beleza e Bem-Estar Meu Império.</strong>
+                                </p>
+                            </h6>
+                        </div>
+                        <img src="{% static 'img/index/meu_imperio_logo.jpg' %}" class="img-fluid" alt="meuimperio" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container-fluid text-center margin text-white services">
+                <h3><p class="Title">Serviços</p></h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="corporal"><img src="{% static 'img/services/estetica_corporal.jpg' %}" alt="Corporal" width="100%" height="50%">
+                        <p class="text-justify paragraph">Estética Corporal - Clique e saiba mais!</p></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="facial"><img src="{% static 'img/services/estetica_facial.jpg' %}" alt="Facial" width="100%" height="50%">
+                        <p class="text-justify paragraph">Estética Facial - Clique e saiba mais!</p></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="basica"><img src="{% static 'img/services/depilacao.jpg' %}" alt="Corporal" width="100%" height="50%">
+                        <p class="text-justify paragraph">Estética Básica - Clique e saiba mais!</p></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="varize"><img src="{% static 'img/services/varizes.jpg' %}" alt="Facial" width="100%" height="50%">
+                        <p class="text-justify paragraph">Secagem de Vasos - Clique e saiba mais!</p></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="laser"><img src="{% static 'img/services/laser.jpg' %}" alt="Facial" width="100%" height="50%">
+                        <p class="text-justify paragraph">Depilação à Laser - Clique e saiba mais!</p></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="olhos"><img src="{% static 'img/services/cilios.jpg' %}" alt="Olhos" width="100%" height="50%">
+                        <p class="text-justify paragraph">Estética de Olhos - Clique e saiba mais!</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="parceiros">
+            <div class="container-fluid text-center margin parceiros text-white">
+                <h3><p class="Title">Parceiros</p></h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img class="parceiros_img" src="{% static 'img/massagem.jpeg' %}" alt="Digital Inovation One" width="100%" height="50%">
+                        </div>
+                        <div class="col">
+                            <img class="parceiros_img" src="{% static 'img/maquiagem.jpg' %}" alt="Outro Dio" width="100%" height="50%">
+                        </div>
+                        <div class="col">
+                            <img class="parceiros_img" src="{% static 'img/cilios2.jpg' %}" alt="Outro Dio" width="100%" height="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+    </nav>
+{% endblock %}

@@ -130,6 +130,10 @@ dmypy.json
 
 # IDEs
 .idea
+.vscode
 
 # Statics
 staticfiles
+
+# Databases
+data

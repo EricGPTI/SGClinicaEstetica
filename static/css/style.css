@@ -1,0 +1,97 @@
+body {
+    font: 20px Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: auto;
+}
+
+.navbar-bg {
+    background-image: url("../img/black1.jpg");
+}
+
+.quem-somos {
+    background-color: #631D76;
+}
+
+.margin {
+    padding: 10px;
+}
+
+.parceiros .parceiros_img {
+    width: 100px;
+    height: 100px;
+}
+
+.services {
+    background-color: #2e86ab;
+    
+}
+
+.parceiros {
+    background-color: #f61067;
+}
+
+.bg-footer {
+    background-color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;
+}
+
+.carrosel-fotos{
+    margin: 5px, 20px;
+}
+
+.estetica{
+    background-color: #343a40;
+    color: white;
+}
+
+.Title {
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+.subtitulo {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+.register-video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.video-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    align-items: center;
+    position: relative;
+}
+
+.player{
+    width: 100%;
+    height: auto;
+}
+
+.paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    color: white;
+    text-align: justify;
+    align-content: flex-start;
+}
