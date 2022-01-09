@@ -13,7 +13,6 @@ psycopg2-binary = "*"
 djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
-collectfast = "==0.2.1"
 django-s3-folder-storage = "*"
 
 [dev-packages]
