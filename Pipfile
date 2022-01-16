@@ -16,6 +16,7 @@ django-filter = "*"
 django-s3-folder-storage = "*"
 boto3 = "*"
 django-storages = "*"
+dj-database-url = "*"
 
 [dev-packages]
 codecov = "*"
