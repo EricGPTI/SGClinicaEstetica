@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 from decouple import config, Csv
 from django.contrib.messages import constants as messages
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,14 +30,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # 'storages',
 
     # Minhas apps
     'core',
     'website',
-    'api',
+    # 'api',
 ]
-
-django_heroku.settings(locals())
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -124,12 +122,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATICFILES_DIRS = (os.path.join('static'),)
+STATICFILES_DIRS = (
+    os.path.join('static'),
+    )
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
+STATICFILES_STORAGE = "storages.backends.s3boto.S3BotoStorage"
+AWS_PRELOAD_METADATA = True
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 MESSAGES_TAGS = {
     messages.ERROR: 'alert-danger',
