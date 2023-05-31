@@ -2,18 +2,15 @@ version: "3.9"
    
 services:
   db:
-    build: .
-    image: postgres
-    container_name: postgresdb
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: sgclinicaestetica_db
     volumes:
       - ./data/db/imperio:/var/lib/postgresql/data
     ports: 
       - "5432:5432"
     restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=imperio
   # web:
   #   build: .
   #   command: python manage.py runserver 0.0.0.0:8000

@@ -21,6 +21,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 AUTH_USER_MODEL = 'website.User'
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -31,7 +32,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'storages',
 
     # Minhas apps
     'core',
@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
+DEFAULT_FILE_STORAGE = 'storages.backends.s3.S3Storage'
 
 DATABASES = {
     'default': {
@@ -84,8 +84,6 @@ DATABASES = {
         'PORT': config('DB_PORT', cast=int),
     }
 }
-
-DATABASES['default'] = dj_database_url.config(default=DATABASES conn_max_age=600, ssl_require=True)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -156,7 +154,7 @@ if AWS_ACCESS_KEY_ID:
     AWS_AUTO_CREATE_BUCKET = False
     AWS_QUERYSTRING_AUTH = True
     AWS_S3_CUSTOM_DOMAIN = None
-    COLLECTFAST_ENABLED = True
+    COLLECTFAST_ENABLED = False
 
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     AWS_DEFAULT_ACL = 'None'
